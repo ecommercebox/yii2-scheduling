@@ -14,10 +14,10 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
+        "php": ">=7.1.8",
         "yiisoft/yii2": "2.0.*",
         "symfony/process": "~3.2",
-        "mtdowling/cron-expression": "~1.0",
+        "dragonmantank/cron-expression": "^3.0",
         "league/climate": "^3.2",
         "guzzlehttp/guzzle": "^6.3",
         "nesbot/carbon": "~2.32.0"
