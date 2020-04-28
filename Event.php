@@ -39,7 +39,7 @@ class Event extends Component
      *
      * @var string
      */
-    protected $_expression = '* * * * * *';
+    protected $_expression = '* * * * *';
 
     /**
      * The timezone the date should be evaluated on.
@@ -224,7 +224,7 @@ class Event extends Component
      */
     public function hourly()
     {
-        return $this->cron('0 * * * * *');
+        return $this->cron('0 * * * *');
     }
 
     /**
@@ -248,7 +248,7 @@ class Event extends Component
      */
     public function daily()
     {
-        return $this->cron('0 0 * * * *');
+        return $this->cron('0 0 * * *');
     }
 
     /**
@@ -301,7 +301,7 @@ class Event extends Component
      */
     public function twiceDaily()
     {
-        return $this->cron('0 1,13 * * * *');
+        return $this->cron('0 1,13 * * *');
     }
 
     /**
@@ -405,7 +405,7 @@ class Event extends Component
      */
     public function weekly()
     {
-        return $this->cron('0 0 * * 0 *');
+        return $this->cron('0 0 * * 0');
     }
 
     /**
@@ -430,7 +430,7 @@ class Event extends Component
      */
     public function monthly()
     {
-        return $this->cron('0 0 1 * * *');
+        return $this->cron('0 0 1 * *');
     }
 
     /**
@@ -440,7 +440,7 @@ class Event extends Component
      */
     public function yearly()
     {
-        return $this->cron('0 0 1 1 * *');
+        return $this->cron('0 0 1 1 *');
     }
 
     /**
@@ -450,7 +450,7 @@ class Event extends Component
      */
     public function everyMinute()
     {
-        return $this->cron('* * * * * *');
+        return $this->cron('* * * * *');
     }
 
     /**
@@ -462,7 +462,7 @@ class Event extends Component
      */
     public function everyNMinutes($minutes)
     {
-        return $this->cron('*/' . $minutes . ' * * * * *');
+        return $this->cron('*/' . $minutes . ' * * * *');
     }
 
     /**
@@ -492,7 +492,7 @@ class Event extends Component
      */
     public function everyThirtyMinutes()
     {
-        return $this->cron('0,30 * * * * *');
+        return $this->cron('0,30 * * * *');
     }
 
     /**
